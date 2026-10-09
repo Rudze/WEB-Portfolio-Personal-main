@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">Rudy David — Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Matomo -->
+  <!-- End Matomo Code -->
+
+  <!--
+    - applies the saved language before first paint (no flash of English)
+  -->
+  <script>
+    try {
+      if (localStorage.getItem('lang') === 'fr') {
+        document.documentElement.lang = 'fr';
+        document.documentElement.classList.add('i18n-pending');
+        setTimeout(() => document.documentElement.classList.remove('i18n-pending'), 1500);
+      }
+    } catch (e) {}
+  </script>
+
+
+</head>
+
+<body>
+
+  <!--
+    - #BACKGROUND
+  -->
+
+  <div class="bg-fx" data-bg-fx aria-hidden="true">
+    <span class="bg-blob bg-blob-1"></span>
+    <span class="bg-blob bg-blob-2"></span>
+    <span class="bg-blob bg-blob-3"></span>
+    <div class="bg-dots"></div>
+    <div class="bg-dots bg-dots-lit"></div>
+  </div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Rudy David" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Rudy David">Rudy</h1>
+
+          <p class="title" data-i18n="sidebar.role">Systems engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span data-i18n="sidebar.showContacts">Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-i18n="sidebar.mail">Email</p>
+
+              <a href="mailto:rudy@galaxynetwork.fr" class="contact-link">contact@rudydavid.fr</a>
+            </div>
+
+          </li>
+
+          <!--<li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Téléphone</p>
+
+              <a href="tel:+33778578148" class="contact-link">*</a>
+            </div>
+
+          </li>-->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-i18n="sidebar.birthday">Birthday</p>
+
+              <time datetime="2001-08-17" data-i18n="sidebar.birthdate">August 17, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-i18n="sidebar.location">Location</p>
+
+              <address>Tours, Indre-et-Loire, France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/rudy-david-495754224/" class="social-link social-linkedin" target="_blank" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Rudze" class="social-link social-github" target="_blank" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/rudydavid01/" class="social-link social-instagram" target="_blank" aria-label="Instagram">
+              <svg class="ig-icon" viewBox="0 0 512 512" aria-hidden="true">
+                <defs>
+                  <radialGradient id="ig-gradient" cx="30%" cy="107%" r="150%">
+                    <stop offset="0%" stop-color="#fdf497"/>
+                    <stop offset="5%" stop-color="#fdf497"/>
+                    <stop offset="45%" stop-color="#fd5949"/>
+                    <stop offset="60%" stop-color="#d6249f"/>
+                    <stop offset="90%" stop-color="#285AEB"/>
+                  </radialGradient>
+                </defs>
+                <path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/>
+                <path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link="about" data-i18n="nav.about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link ="resume" data-i18n="nav.resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link ="portfolio">Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <a
+              class="navbar-link"
+              href="https://wiki.galaxie-studio.fr/fr/Accueil"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Wiki
+            </a>
+          </li>
+
+          <li class="navbar-item lang-item">
+            <div class="lang-switch" role="group" aria-label="Language">
+              <button data-lang="en" aria-label="English" aria-pressed="true">
+                <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <clipPath id="uk-a"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                  <clipPath id="uk-b"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+                  <g clip-path="url(#uk-a)">
+                    <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                    <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-b)" stroke="#C8102E" stroke-width="4"/>
+                    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                    <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                  </g>
+                </svg>
+              </button>
+              <button data-lang="fr" aria-label="Français" aria-pressed="false">
+                <svg viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <rect width="1" height="2" fill="#002395"/>
+                  <rect x="1" width="1" height="2" fill="#fff"/>
+                  <rect x="2" width="1" height="2" fill="#ED2939"/>
+                </svg>
+              </button>
+            </div>
+          </li>
+
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="blog">Blog</button>
+          </li>
+          -->
+          
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
+          </li>
+          -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+<article class="about active" data-page="about">
+
+  <header>
+    <h2 class="h2 article-title" data-i18n="nav.about">About</h2>
+  </header>
+
+  <section class="about-text">
+
+    <br>
+
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <p class="about-hello" data-i18n="about.hello">Hi, I’m Rudy 👋</p>
+        <p><strong data-i18n="about.age">Age:</strong> <span data-age>25</span> <span data-i18n="about.years">years old</span></p>
+        <p><strong data-i18n="about.location">Location:</strong> Tours, France</p>
+        <p><strong data-i18n="about.nationality">Nationality:</strong> <span data-i18n="about.french">French</span></p>
+      </div>
+      <figure class="about-hero-img">
+        <img src="./assets/images/my-avatar-mac.png" alt="Rudy working on his Mac" data-i18n-alt="about.avatarAlt" width="500" height="500">
+      </figure>
+    </section>
+
+    <br>
+
+    <section>
+      <h2 data-i18n="about.linux.title">🔧 Linux system administrator 🐧</h2>
+      <p data-i18n="about.linux.p1">Linux-focused system administrator, specialized in operations, reliability and performance of system environments.</p>
+      <p data-i18n="about.linux.p2">Trained in systems engineering at CESI.</p>
+      <p data-i18n="about.linux.p3">More details on the Resume page.</p>
+    </section>
+
+    <br>
+
+    <section>
+      <h2 data-i18n="about.it.title">💻 IT & infrastructure</h2>
+      <p data-i18n="about.it.p1">Passionate about IT and open-source technologies, I design and maintain robust, efficient infrastructure.</p>
+      <p data-i18n="about.it.p2">I love turning technical needs into concrete solutions.</p>
+    </section>
+
+    <br>
+
+    <section>
+      <h2 data-i18n="about.sport.title">🏋️ Discipline & sport</h2>
+      <p data-i18n="about.sport.p1">I compete in <a href="https://en.wikipedia.org/wiki/Powerlifting" class="inline-link" target="_blank">powerlifting</a> at a high level, a sport that builds rigor, consistency and the drive to push my limits.</p>
+    </section>
+
+    <br>
+
+    <section>
+      <h2 data-i18n="about.community.title">🌐 Community & projects</h2>
+      <p data-i18n="about.community.p1">I run a Discord community around technical projects and servers that I build and manage.</p>
+      <p data-i18n="about.community.p2"><a href="https://discord.gg/6ffyCYq3Ea" class="inline-link" target="_blank">Join the Discord server</a></p>
+    </section>
+
+    <br>
+
+    <section>
+      <h2>📬 Contact</h2>
+      <p data-i18n="about.contact.p1">Have a project or a question? <a href="mailto:rudy@galaxynetwork.fr" class="inline-link">Get in touch</a>.</p>
+    </section>
+
+  </section>
+
+</article>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title" data-i18n="nav.resume">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" data-i18n="resume.education">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="edu1.title">IT Infrastructure & Cybersecurity Manager (work-study)</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text" data-i18n="tl.profile.workstudy"><ion-icon name="person" class="icon-resume"></ion-icon> Profile: Work-study student</p>
+              <p class="timeline-text" data-i18n="tl.program.master"><ion-icon name="document" class="icon-resume"></ion-icon> Program: Professional master’s degree (Bac+5)</p>
+              <p class="timeline-text" data-i18n="tl.level.5"><ion-icon name="star" class="icon-resume"></ion-icon> Level: Bac+5 (master’s)</p>
+              <p class="timeline-text" data-i18n="tl.duration.2"><ion-icon name="time" class="icon-resume"></ion-icon> Duration: 2 years</p>
+              <p class="timeline-text" data-i18n="tl.school.cesi"><ion-icon name="pin" class="icon-resume"></ion-icon> School: CESI campus, Le Mans</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="edu2.title">Systems & Network Administrator (work-study)</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text" data-i18n="tl.profile.workstudy"><ion-icon name="person" class="icon-resume"></ion-icon> Profile: Work-study student</p>
+              <p class="timeline-text" data-i18n="tl.program.bachelor"><ion-icon name="document" class="icon-resume"></ion-icon> Program: Bachelor’s degree (Bac+3)</p>
+              <p class="timeline-text" data-i18n="tl.level.3"><ion-icon name="star" class="icon-resume"></ion-icon> Level: Bac+3 (bachelor’s)</p>
+              <p class="timeline-text" data-i18n="tl.duration.1"><ion-icon name="time" class="icon-resume"></ion-icon> Duration: 1 year</p>
+              <p class="timeline-text" data-i18n="tl.school.cesi"><ion-icon name="pin" class="icon-resume"></ion-icon> School: CESI campus, Le Mans</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="edu3.title">IT Services for Organizations</h4>
+
+              <span>2020 — 2022</span>
+
+              <p class="timeline-text" data-i18n="tl.profile.student"><ion-icon name="person" class="icon-resume"></ion-icon> Profile: Student</p>
+              <p class="timeline-text" data-i18n="tl.program.bts"><ion-icon name="document" class="icon-resume"></ion-icon> Program: BTS SIO (SISR option)</p>
+              <p class="timeline-text" data-i18n="tl.level.2"><ion-icon name="star" class="icon-resume"></ion-icon> Level: Bac+2</p>
+              <p class="timeline-text" data-i18n="tl.duration.2"><ion-icon name="time" class="icon-resume"></ion-icon> Duration: 2 years</p>
+              <p class="timeline-text" data-i18n="tl.school.stcharles"><ion-icon name="pin" class="icon-resume"></ion-icon> School: Saint-Charles Sainte-Croix campus, Le Mans</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="edu4.title">Electrical & Connected Systems</h4>
+
+              <span>2017 — 2020</span>
+
+              <p class="timeline-text" data-i18n="tl.profile.student"><ion-icon name="person" class="icon-resume"></ion-icon> Profile: Student</p>
+              <p class="timeline-text" data-i18n="tl.program.bacpro"><ion-icon name="document" class="icon-resume"></ion-icon> Program: Vocational baccalaureate MELEC (SN option)</p>
+              <p class="timeline-text" data-i18n="tl.level.0"><ion-icon name="star" class="icon-resume"></ion-icon> Level: High school diploma</p>
+              <p class="timeline-text" data-i18n="tl.duration.3"><ion-icon name="time" class="icon-resume"></ion-icon> Duration: 3 years</p>
+              <p class="timeline-text" data-i18n="tl.school.vadepied"><ion-icon name="pin" class="icon-resume"></ion-icon> School: Lycée Raoul Vadepied, Évron</p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" data-i18n="resume.experience">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">DRI</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text" data-i18n="exp.dri.role"><ion-icon name="briefcase" class="icon-resume"></ion-icon> Position: Systems administrator (work-study)</p>
+              <p class="timeline-text" data-i18n="exp.missions"><ion-icon name="extension-puzzle" class="icon-resume"></ion-icon> Responsibilities</p>
+              <p class="timeline-text tabulation" data-i18n="exp.dri.1">- Deployed redundant, highly available multi-site infrastructure (disaster recovery and business continuity).</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.dri.2">- Improved tools and internal processes, and optimized costs (monitoring, alerting).</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.dri.3">- Technical lead and project manager: NETPRESTATION, KOGOIA ...</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.dri.4">- Built and managed automated infrastructure through GitLab using configuration management tools (Puppet | Ansible).</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.dri.5">- Support: technical assistance to customers, resolving L1 incidents.</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.dri.6">- Operations: anticipated and resolved operational issues with effective solutions.</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">FPEE</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text" data-i18n="exp.fpee.role"><ion-icon name="briefcase" class="icon-resume"></ion-icon> Position: IT support technician (work-study)</p>
+              <p class="timeline-text" data-i18n="exp.missions"><ion-icon name="extension-puzzle" class="icon-resume"></ion-icon> Responsibilities</p>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.1">- Handled user requests by phone, email, chat or ticket.</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.2">- Diagnosed and fixed software, hardware and network issues.</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.3">- Helped users install and configure new equipment (computers, printers, phones).</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.4">- Identified, analyzed and resolved technical incidents within the agreed timeframes.</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.5">- Created and managed user accounts (email, Active Directory, internal software).</p>
+              <br>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.6">- Configured and enforced access rights according to company policies.</p>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.7">- Helped users connect to internal and remote networks (VPN, Wi-Fi, Ethernet).</p>
+              <p class="timeline-text tabulation" data-i18n="exp.fpee.8">- Kept track of the IT hardware inventory (PCs, phones, printers, etc.).</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="exp.sarrel.title">Sarrel internship</h4>
+
+              <span data-i18n="exp.sarrel.dates">2020 — 2021 and 2021 — 2022</span>
+
+              <p class="timeline-text" data-i18n="exp.sarrel.role"><ion-icon name="briefcase" class="icon-resume"></ion-icon> Position: IT support intern</p>
+              <p class="timeline-text" data-i18n="exp.missions"><ion-icon name="extension-puzzle" class="icon-resume"></ion-icon> Responsibilities</p>
+              <p class="timeline-text tabulation" data-i18n="exp.sarrel.1">- Low-level computer support and repair (laptops, desktops, smartphones, printers, etc.).</p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        
+<section class="timeline skills-section">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" data-i18n="resume.skills">Technical skills</h3>
+          </div>
+
+          <!-- interactive terminal: content is generated from SKILLS in script.js -->
+          <div class="skill-term" data-skill-term>
+
+            <div class="st-bar">
+              <span></span><span></span><span></span>
+              <p>rudy@galaxy: ~/skills</p>
+            </div>
+
+            <div class="st-body">
+              <div class="st-tree has-scrollbar" data-st-tree role="tablist" aria-label="Skill categories"></div>
+
+              <div class="st-pane" aria-live="polite">
+                <p class="st-cmd"><span class="st-prompt">rudy@galaxy:~/skills$</span> <span data-st-cmd></span><span class="st-caret"></span></p>
+                <p class="st-comment" data-st-comment></p>
+                <ul class="st-grid" data-st-grid></ul>
+              </div>
+            </div>
+
+            <div class="st-status">
+              <span data-st-status></span>
+              <span class="st-hint" data-i18n="st.hint">Click a folder to explore</span>
+            </div>
+
+          </div>
+
+        </section>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <!-- GitHub contributions, fetched in script.js -->
+        <section class="gh-activity" data-gh data-gh-user="Rudze">
+
+          <div class="gh-head">
+            <h3 class="h3"><ion-icon name="logo-github"></ion-icon> <span data-i18n="gh.title">GitHub activity</span></h3>
+            <a href="https://github.com/Rudze" class="gh-link" target="_blank" rel="noopener">@Rudze <ion-icon name="open-outline"></ion-icon></a>
+          </div>
+
+          <div class="gh-scroll has-scrollbar" data-gh-scroll>
+            <div class="gh-graph" data-gh-graph>
+              <p class="gh-loading" data-i18n="gh.loading">Loading contributions…</p>
+            </div>
+          </div>
+
+          <div class="gh-foot">
+            <p class="gh-total" data-gh-total></p>
+            <div class="gh-legend" aria-hidden="true">
+              <span data-i18n="gh.less">Less</span>
+              <i class="gh-cell l0"></i><i class="gh-cell l1"></i><i class="gh-cell l2"></i><i class="gh-cell l3"></i><i class="gh-cell l4"></i>
+              <span data-i18n="gh.more">More</span>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn="all" data-i18n="filter.all">All</button>
+            </li>
+
+            <li class="filter-item">
+               <button data-filter-btn="applications">Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="website" data-i18n="filter.website">Websites</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="games" data-i18n="filter.games">Games</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value data-i18n="filter.select">Select a category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item="all" data-i18n="filter.all">All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="applications">Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="website" data-i18n="filter.website">Websites</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="games" data-i18n="filter.games">Games</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/Rudze/Godot-3DGame" target="_blank" rel="noopener" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <div class="project-cover" role="img" aria-label="No Name, 3D sandbox game made with Godot">
+                    <span class="cover-cubes" aria-hidden="true"></span>
+                    <span class="cover-title">NO NAME</span>
+                    <span class="cover-sub">Godot · 3D sandbox</span>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">No Name</h3>
+
+                <p class="project-category" data-i18n="proj.cat.games">Games</p>
+
+              </a>
+
+              <!-- details shown in the project modal -->
+              <div class="project-details" hidden>
+                <p class="pd-status" data-i18n="pd.status.dev">In development</p>
+                <p class="pd-desc" data-i18n="pd.noname.desc">The video game I’m currently developing: a 3D sandbox game built with Godot. It doesn’t have a name yet, hence “No Name”.</p>
+                <h4 class="pd-heading" data-i18n="pd.highlights">Highlights</h4>
+                <ul class="pd-features">
+                  <li data-i18n="pd.noname.f1">3D sandbox gameplay</li>
+                  <li data-i18n="pd.noname.f2">Built with the Godot engine</li>
+                  <li data-i18n="pd.noname.f3">Currently in active development</li>
+                </ul>
+                <h4 class="pd-heading" data-i18n="pd.stack">Tech stack</h4>
+                <ul class="pd-stack"><li>Godot</li><li>3D</li><li>Sandbox</li></ul>
+                <div class="pd-links">
+                  <a href="https://github.com/Rudze/Godot-3DGame" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span data-i18n="pd.github">View on GitHub</span></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/Rudze/PYTHON-Login-Game-API" target="_blank" rel="noopener" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-login-game-api.png" alt="Python Login Game API" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Python Login Game API</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+
+              <!-- details shown in the project modal -->
+              <div class="project-details" hidden>
+                <p class="pd-desc" data-i18n="pd.loginapi.desc">A secure 3-tier authentication and game server architecture for a 2D multiplayer RPG. Players never see a game server’s IP: everything goes through a REST API that handles login and server discovery, which protects the servers against DDoS attacks.</p>
+                <h4 class="pd-heading" data-i18n="pd.highlights">Highlights</h4>
+                <ul class="pd-features">
+                  <li data-i18n="pd.loginapi.f1">JWT authentication with short-lived tokens</li>
+                  <li data-i18n="pd.loginapi.f2">Game server IP hidden without a valid token</li>
+                  <li data-i18n="pd.loginapi.f3">Multi-server support, routing players to the least loaded server</li>
+                  <li data-i18n="pd.loginapi.f4">Real-time WebSocket game server (asyncio)</li>
+                  <li data-i18n="pd.loginapi.f5">Bcrypt password hashing and auto-generated Swagger docs</li>
+                </ul>
+                <h4 class="pd-heading" data-i18n="pd.stack">Tech stack</h4>
+                <ul class="pd-stack"><li>Python</li><li>FastAPI</li><li>MySQL</li><li>WebSocket</li><li>JWT</li><li>Pygame</li></ul>
+                <div class="pd-links">
+                  <a href="https://github.com/Rudze/PYTHON-Login-Game-API" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span data-i18n="pd.github">View on GitHub</span></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/Rudze/UE5-PL-DayTimeWidget" target="_blank" rel="noopener" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-ue5-daytime.jpg" alt="UE5 Day & Time widget plugin" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Unreal Engine 5 - Day &amp; Time Widget</h3>
+
+                <p class="project-category" data-i18n="proj.cat.games">Games</p>
+
+              </a>
+
+              <!-- details shown in the project modal -->
+              <div class="project-details" hidden>
+                <p class="pd-desc" data-i18n="pd.daytime.desc">An Unreal Engine 5 plugin that displays the current in-game day and time on screen, in real time, fully synchronized with Epic’s Day Sequence plugin for day and night cycles.</p>
+                <h4 class="pd-heading" data-i18n="pd.highlights">Highlights</h4>
+                <ul class="pd-features">
+                  <li data-i18n="pd.daytime.f1">Real-time day and time widget</li>
+                  <li data-i18n="pd.daytime.f2">Synchronized with Epic’s Day Sequence plugin</li>
+                  <li data-i18n="pd.daytime.f3">Custom time formats and localization</li>
+                  <li data-i18n="pd.daytime.f4">Works in the editor and at runtime</li>
+                  <li data-i18n="pd.daytime.f5">Fully customizable UI (font, color, layout)</li>
+                </ul>
+                <h4 class="pd-heading" data-i18n="pd.stack">Tech stack</h4>
+                <ul class="pd-stack"><li>Unreal Engine 5</li><li>Day Sequence</li><li>UI Widget</li><li>Plugin</li></ul>
+                <div class="pd-links">
+                  <a href="https://github.com/Rudze/UE5-PL-DayTimeWidget" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span data-i18n="pd.github">View on GitHub</span></a>
+                  <a href="https://wiki.galaxie-studio.fr/fr/UnrealUngine/Plugins/DayTimeWidget" class="pd-btn" target="_blank" rel="noopener"><ion-icon name="book-outline"></ion-icon><span data-i18n="pd.docs">Documentation</span></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://github.com/Rudze/UE5-InventorySystem" target="_blank" rel="noopener" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-ue5inventory.png" alt="UE5 Inventory System" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Unreal Engine 5 - UE5-InventorySystem</h3>
+
+                <p class="project-category" data-i18n="proj.cat.games">Games</p>
+
+              </a>
+
+              <!-- details shown in the project modal -->
+              <div class="project-details" hidden>
+                <p class="pd-desc" data-i18n="pd.inventory.desc">A highly scalable inventory system for Unreal Engine 5: create a fully working inventory grid in just a few clicks, with single-slot items or Tetris-style multi-slot items.</p>
+                <h4 class="pd-heading" data-i18n="pd.highlights">Highlights</h4>
+                <ul class="pd-features">
+                  <li data-i18n="pd.inventory.f1">Inventories in a few clicks (grid, UI and logic)</li>
+                  <li data-i18n="pd.inventory.f2">Single-slot and multi-slot items</li>
+                  <li data-i18n="pd.inventory.f3">Configurable items: size, icon, stacking…</li>
+                  <li data-i18n="pd.inventory.f4">Ready-to-use UI with optional drag & drop</li>
+                  <li data-i18n="pd.inventory.f5">Attach it to players, chests, vendors or any actor</li>
+                </ul>
+                <h4 class="pd-heading" data-i18n="pd.stack">Tech stack</h4>
+                <ul class="pd-stack"><li>Unreal Engine 5</li><li>Plugin</li><li>UI</li></ul>
+                <div class="pd-links">
+                  <a href="https://github.com/Rudze/UE5-InventorySystem" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span data-i18n="pd.github">View on GitHub</span></a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="website">
+              <a href="https://github.com/Rudze/WEB-Portfolio-LinuxConsole" target="_blank" rel="noopener" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-linuxportfolio.png" alt="Linux console portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-i18n="proj.linux">Linux console portfolio</h3>
+
+                <p class="project-category" data-i18n="proj.cat.website">Website</p>
+
+              </a>
+
+              <!-- details shown in the project modal -->
+              <div class="project-details" hidden>
+                <p class="pd-desc" data-i18n="pd.linux.desc">A portfolio website inspired by Linux terminals and hacker-style interfaces, for an immersive experience that feels like an interactive console.</p>
+                <h4 class="pd-heading" data-i18n="pd.highlights">Highlights</h4>
+                <ul class="pd-features">
+                  <li data-i18n="pd.linux.f1">Linux terminal inspired design</li>
+                  <li data-i18n="pd.linux.f2">Smooth animations and transitions</li>
+                  <li data-i18n="pd.linux.f3">Interactive portfolio sections</li>
+                  <li data-i18n="pd.linux.f4">Responsive on desktop and mobile</li>
+                </ul>
+                <h4 class="pd-heading" data-i18n="pd.stack">Tech stack</h4>
+                <ul class="pd-stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <div class="pd-links">
+                  <a href="https://github.com/Rudze/WEB-Portfolio-LinuxConsole" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span data-i18n="pd.github">View on GitHub</span></a>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="https://mc.galaxynetwork.fr/" target="_blank" rel="noopener" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-minecraft.png" alt="NewHorizon Minecraft server" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-i18n="proj.minecraft">Minecraft server - NewHorizon</h3>
+
+                <p class="project-category" data-i18n="proj.cat.games">Games</p>
+
+              </a>
+
+              <!-- details shown in the project modal -->
+              <div class="project-details" hidden>
+                <p class="pd-desc" data-i18n="pd.minecraft.desc">A Minecraft server that I deploy and administer for my community.</p>
+                <h4 class="pd-heading" data-i18n="pd.stack">Tech stack</h4>
+                <ul class="pd-stack"><li>Minecraft</li><li>Linux</li><li>Administration</li></ul>
+                <div class="pd-links">
+                  <a href="https://mc.galaxynetwork.fr/" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="globe-outline"></ion-icon><span data-i18n="pd.website">Visit website</span></a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+<!--
+      
+        - #BLOG
+      
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Test</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">19 décembre 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Test h3</h3>
+
+                  <p class="blog-text">
+                    testttttttttttttttt.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+-->
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+<!--
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10677.790434719!2d0.20235267873360763!3d48.00506157915006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1734623286043!5m2!1sfr!2sfr"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulaire de contact</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nom complet" required data-form-input>
+
+              <input id="email" type="email" name="email" class="form-input" placeholder="Adresse email" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input></textarea>
+
+            <button onclick="envoieMail()" class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Envoyer un message</span>
+            </button>
+          
+          </form>
+
+        </section>
+
+      </article>
+-->
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+
+  <!--
+    - #PROJECT MODAL
+  -->
+
+  <div class="pm" data-pm aria-hidden="true">
+    <div class="pm-overlay" data-pm-close></div>
+
+    <div class="pm-dialog" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+
+      <button class="pm-close" data-pm-close aria-label="Close" data-i18n-aria="pm.close">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <figure class="pm-media" data-pm-media></figure>
+
+      <div class="pm-body">
+        <div class="pm-meta">
+          <span class="pm-chip" data-pm-cat></span>
+          <span class="pm-chip pm-status" data-pm-status></span>
+        </div>
+
+        <h3 class="pm-title" id="pm-title" data-pm-title></h3>
+
+        <div class="pm-details" data-pm-details></div>
+      </div>
+
+      <div class="pm-nav">
+        <button class="pm-nav-btn" data-pm-prev>
+          <ion-icon name="chevron-back"></ion-icon>
+          <span data-i18n="pm.prev">Previous</span>
+        </button>
+        <span class="pm-count" data-pm-count></span>
+        <button class="pm-nav-btn" data-pm-next>
+          <span data-i18n="pm.next">Next</span>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
