@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.1.0...v1.1.1) (2026-10-28)
+
+### Bug Fixes
+
+* use the new PNG cover for the Day & Time widget project ([7f127ad](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/7f127ad3390eef1e6aef4940a62e084939388f99))
+
 ## [1.1.0](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.0.0...v1.1.0) (2026-10-28)
 
 ### Features
