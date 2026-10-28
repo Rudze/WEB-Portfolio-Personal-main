@@ -105,6 +105,22 @@ The website is hosted with **GitHub Pages**:
 
 ---
 
+## Versioning
+
+Releases are fully automated with [semantic-release](https://github.com/semantic-release/semantic-release).
+On every push to `main`, a GitHub Action reads the commit messages and publishes a new version, a git tag, a GitHub release and an updated [CHANGELOG.md](CHANGELOG.md).
+
+Commits follow the [Conventional Commits](https://www.conventionalcommits.org/) format:
+
+| Commit | Release |
+| --- | --- |
+| `fix: ...` | Patch (`1.0.0` → `1.0.1`) |
+| `feat: ...` | Minor (`1.0.0` → `1.1.0`) |
+| `feat!: ...` or `BREAKING CHANGE:` | Major (`1.0.0` → `2.0.0`) |
+| `docs:`, `style:`, `chore:`, `ci:`... | No release |
+
+---
+
 ## Credit
 
 Special thanks to [codewithsadee](https://github.com/codewithsadee) for creating the original [vCard Personal Portfolio](https://github.com/codewithsadee/vcard-personal-portfolio), which this website is based on.
