@@ -7,7 +7,7 @@
 ---
 
 <div align="center">
-  <img alt="Demo" src="./assets_readme/images/readme-img1.png" />
+  <img alt="Demo" src="./assets/images/readme/demo.png" />
 </div>
 
 <br/>
