@@ -686,17 +686,17 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Rudze/PYTHON-Login-Game-API" target="_blank" rel="noopener" data-project-open>
+              <a href="https://github.com/Rudze/PYTHON-GameServerKit" target="_blank" rel="noopener" data-project-open>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-login-game-api.png" alt="Python Login Game API" loading="lazy">
+                  <img src="./assets/images/project-game-server-kit.png" alt="Python Game Server Kit" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Python Login Game API</h3>
+                <h3 class="project-title">Python Game Server Kit</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -704,19 +704,19 @@
 
               <!-- details shown in the project modal -->
               <div class="project-details" hidden>
-                <p class="pd-desc" data-i18n="pd.loginapi.desc">A secure 3-tier authentication and game server architecture for a 2D multiplayer RPG. Players never see a game server’s IP: everything goes through a REST API that handles login and server discovery, which protects the servers against DDoS attacks.</p>
+                <p class="pd-desc" data-i18n="pd.gameserverkit.desc">A reusable server base for multiplayer games: an HTTP API for accounts and the server list, and a real-time WebSocket game server. Built with Python and PostgreSQL, made for Godot 4 clients but usable from any engine.</p>
                 <h4 class="pd-heading" data-i18n="pd.highlights">Highlights</h4>
                 <ul class="pd-features">
-                  <li data-i18n="pd.loginapi.f1">JWT authentication with short-lived tokens</li>
-                  <li data-i18n="pd.loginapi.f2">Game server IP hidden without a valid token</li>
-                  <li data-i18n="pd.loginapi.f3">Multi-server support, routing players to the least loaded server</li>
-                  <li data-i18n="pd.loginapi.f4">Real-time WebSocket game server (asyncio)</li>
-                  <li data-i18n="pd.loginapi.f5">Bcrypt password hashing and auto-generated Swagger docs</li>
+                  <li data-i18n="pd.gameserverkit.f1">Accounts with JWT login, bcrypt passwords and request limits</li>
+                  <li data-i18n="pd.gameserverkit.f2">Server list: game servers report their load and players join the least loaded one</li>
+                  <li data-i18n="pd.gameserverkit.f3">Real-time chat, movement and zones over WebSocket</li>
+                  <li data-i18n="pd.gameserverkit.f4">Grid inventory with rotation, stacks, equipment, bags and chests</li>
+                  <li data-i18n="pd.gameserverkit.f5">Data driven: a new game is just new JSON data, same code</li>
                 </ul>
                 <h4 class="pd-heading" data-i18n="pd.stack">Tech stack</h4>
-                <ul class="pd-stack"><li>Python</li><li>FastAPI</li><li>MySQL</li><li>WebSocket</li><li>JWT</li><li>Pygame</li></ul>
+                <ul class="pd-stack"><li>Python</li><li>FastAPI</li><li>WebSocket</li><li>asyncio</li><li>PostgreSQL</li><li>Docker</li><li>Godot 4</li></ul>
                 <div class="pd-links">
-                  <a href="https://github.com/Rudze/PYTHON-Login-Game-API" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span data-i18n="pd.github">View on GitHub</span></a>
+                  <a href="https://github.com/Rudze/PYTHON-GameServerKit" class="pd-btn pd-btn-primary" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon><span data-i18n="pd.github">View on GitHub</span></a>
                 </div>
               </div>
             </li>
