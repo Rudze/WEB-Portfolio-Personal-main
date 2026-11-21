@@ -2655,35 +2655,6 @@ html.i18n-pending body { visibility: hidden; }
   text-transform: uppercase;
 }
 
-.pd-features {
-  display: grid;
-  gap: 8px;
-}
-
-.pd-features li {
-  position: relative;
-  padding-left: 26px;
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.5;
-}
-
-.pd-features li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 1px;
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 10px;
-  color: var(--smoky-black);
-  background: var(--white-2);
-}
-
 .pd-stack {
   display: flex;
   flex-wrap: wrap;
