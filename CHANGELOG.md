@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.1.2...v1.2.0) (2026-11-21)
+
+### Features
+
+* rework the Minecraft project into the Paradisia Cobblemon server and show it first ([47ef7ea](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/47ef7eaf061c51f4b075af7186ef968770ce7f1b))
+
 ## [1.1.2](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.1.1...v1.1.2) (2026-10-28)
 
 ### Bug Fixes
