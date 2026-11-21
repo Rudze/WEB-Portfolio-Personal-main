@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.0...v1.2.1) (2026-11-21)
+
+### Bug Fixes
+
+* remove the highlights list from the project details ([70a86e8](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/70a86e820191619a379205e353c3e294d5197c2c))
+
 ## [1.2.0](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.1.2...v1.2.0) (2026-11-21)
 
 ### Features
