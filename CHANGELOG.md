@@ -1,3 +1,9 @@
+## [1.2.2](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.1...v1.2.2) (2026-11-22)
+
+### Bug Fixes
+
+* rename No Name to NewLife with its cover image and description ([f2c7569](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/f2c756954dcebd5752ac118853e3850a94984344))
+
 ## [1.2.1](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.0...v1.2.1) (2026-11-21)
 
 ### Bug Fixes
