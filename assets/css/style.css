@@ -2423,69 +2423,6 @@ html.i18n-pending body { visibility: hidden; }
 
 
 /*-----------------------------------*\
-  #PROJECT COVER (no screenshot yet)
-\*-----------------------------------*/
-
-.project-cover {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 120%, hsla(0, 0%, 100%, 0.14), transparent 60%),
-    hsl(240, 3%, 9%);
-  transition: var(--transition-1);
-}
-
-/* isometric cube pattern drifting slowly */
-.cover-cubes {
-  position: absolute;
-  inset: -50%;
-  background:
-    linear-gradient(30deg, hsla(0, 0%, 100%, 0.05) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, 0.05) 87.5%),
-    linear-gradient(150deg, hsla(0, 0%, 100%, 0.05) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, 0.05) 87.5%),
-    linear-gradient(30deg, hsla(0, 0%, 100%, 0.05) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, 0.05) 87.5%),
-    linear-gradient(150deg, hsla(0, 0%, 100%, 0.05) 12%, transparent 12.5%, transparent 87%, hsla(0, 0%, 100%, 0.05) 87.5%),
-    linear-gradient(60deg, hsla(0, 0%, 100%, 0.03) 25%, transparent 25.5%, transparent 75%, hsla(0, 0%, 100%, 0.03) 75%);
-  background-size: 40px 70px;
-  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0;
-  animation: cover-drift 40s linear infinite;
-}
-
-.cover-title {
-  position: relative;
-  color: var(--white-1);
-  font-size: 30px;
-  font-weight: var(--fw-600);
-  letter-spacing: 0.3em;
-  margin-right: -0.3em;
-}
-
-.cover-sub {
-  position: relative;
-  color: var(--light-gray-70);
-  font-size: var(--fs-7);
-  letter-spacing: 0.08em;
-}
-
-.project-item > a:hover .project-cover { transform: scale(1.1); }
-
-@keyframes cover-drift { to { transform: translate(40px, 70px); } }
-
-@media (prefers-reduced-motion: reduce) {
-  .cover-cubes { animation: none; }
-}
-
-
-
-
-
-/*-----------------------------------*\
   #PROJECT MODAL
 \*-----------------------------------*/
 
@@ -2567,8 +2504,7 @@ html.i18n-pending body { visibility: hidden; }
   background: hsl(240, 3%, 9%);
 }
 
-.pm-media img,
-.pm-media .project-cover {
+.pm-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;

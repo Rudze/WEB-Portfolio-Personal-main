@@ -100,7 +100,7 @@ const I18N = (() => {
     "pm.close": "Fermer",
     "pm.prev": "Précédent",
     "pm.next": "Suivant",
-    "pd.noname.desc": "Le jeu vidéo que je développe actuellement : un jeu bac à sable en 3D, réalisé avec Godot. Il n’a pas encore de nom, d’où « No Name ».",
+    "pd.newlife.desc": "NewLife est le jeu vidéo que je développe actuellement : un jeu bac à sable en 3D réalisé avec Godot. Il n’a pas encore d’objectif final, c’est avant tout un projet personnel pour apprendre Godot.",
     "pd.gameserverkit.desc": "Une base de serveur réutilisable pour les jeux multijoueurs : une API HTTP pour les comptes et la liste des serveurs, et un serveur de jeu WebSocket en temps réel. Développée en Python avec PostgreSQL, pensée pour des clients Godot 4 mais utilisable avec n’importe quel moteur.",
     "pd.status.new": "Nouvelle version",
     "pd.github.site": "Site sur GitHub",

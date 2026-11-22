@@ -488,7 +488,7 @@ if (pm) {
     const details = item.querySelector(".project-details");
     const status = details.querySelector(".pd-status");
 
-    media.innerHTML = item.querySelector(".project-img img, .project-img .project-cover").outerHTML;
+    media.innerHTML = item.querySelector(".project-img img").outerHTML;
     catEl.textContent = item.querySelector(".project-category").textContent;
     statusEl.textContent = status ? status.textContent : "";
     titleEl.textContent = item.querySelector(".project-title").textContent;
