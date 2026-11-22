@@ -1,3 +1,9 @@
+## [1.2.3](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.2...v1.2.3) (2026-11-22)
+
+### Bug Fixes
+
+* point the NewLife project to the GODOT-NewLife repository ([b61ed2b](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/b61ed2b685a0aba49856ada9fd275e4d0566914b))
+
 ## [1.2.2](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.1...v1.2.2) (2026-11-22)
 
 ### Bug Fixes
