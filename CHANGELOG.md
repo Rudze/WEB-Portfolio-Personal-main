@@ -1,3 +1,9 @@
+## [1.2.4](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.3...v1.2.4) (2026-11-26)
+
+### Bug Fixes
+
+* use the profile picture as favicon ([004e399](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/004e399abc88fc3f2da4b26a9e7f3aaad776773f))
+
 ## [1.2.3](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.2...v1.2.3) (2026-11-22)
 
 ### Bug Fixes
