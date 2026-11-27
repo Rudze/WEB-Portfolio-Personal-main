@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.3.0...v1.3.1) (2026-11-27)
+
+### Bug Fixes
+
+* add the MacWidget project ([7ed6117](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/7ed61170332cca056aee6a73948e09385eede1ba))
+
 ## [1.3.0](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.4...v1.3.0) (2026-11-27)
 
 ### Features
