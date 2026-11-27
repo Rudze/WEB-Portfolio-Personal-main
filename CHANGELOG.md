@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.4...v1.3.0) (2026-11-27)
+
+### Features
+
+* add the Python Outlook Popup project ([302585f](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/302585f9b1720a96ed27143bb5a6ece1469e3dd3))
+
 ## [1.2.4](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.2.3...v1.2.4) (2026-11-26)
 
 ### Bug Fixes
