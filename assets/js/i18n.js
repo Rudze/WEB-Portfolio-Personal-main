@@ -102,6 +102,7 @@ const I18N = (() => {
     "pm.next": "Suivant",
     "pd.newlife.desc": "NewLife est le jeu vidéo que je développe actuellement : un jeu bac à sable en 3D réalisé avec Godot. Il n’a pas encore d’objectif final, c’est avant tout un projet personnel pour apprendre Godot.",
     "pd.gameserverkit.desc": "Une base de serveur réutilisable pour les jeux multijoueurs : une API HTTP pour les comptes et la liste des serveurs, et un serveur de jeu WebSocket en temps réel. Développée en Python avec PostgreSQL, pensée pour des clients Godot 4 mais utilisable avec n’importe quel moteur.",
+    "pd.outlookpopup.desc": "Une popup rouge qui s’affiche au centre de l’écran dès qu’un mail de ticket arrive dans un dossier Outlook choisi, pour ne plus jamais rater un ticket. Un flux Power Automate écrit chaque mail dans OneDrive et un petit script Python surveille ce dossier. L’alerte reste au-dessus de toutes les fenêtres jusqu’à sa suppression, ou revient 5 minutes plus tard.",
     "pd.status.new": "Nouvelle version",
     "pd.github.site": "Site sur GitHub",
     "pd.github.modpack": "Modpack sur GitHub",
