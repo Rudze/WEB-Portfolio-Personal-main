@@ -1,3 +1,9 @@
+## [1.3.2](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.3.1...v1.3.2) (2026-11-27)
+
+### Bug Fixes
+
+* add the Ansible HomeLab project ([249491b](https://github.com/Rudze/WEB-Portfolio-Personal-main/commit/249491bc6603ad4bbb953c6ed8a36dd000aac587))
+
 ## [1.3.1](https://github.com/Rudze/WEB-Portfolio-Personal-main/compare/v1.3.0...v1.3.1) (2026-11-27)
 
 ### Bug Fixes
